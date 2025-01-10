@@ -43,28 +43,35 @@
     </nav>
 
     <div class="mt-5"></div>
-<div class="d-flex w-75 h-75 bg-danger">
+<div class="d-flex w-75 h-75 b2">
     <!-- barra di navigazione -->
-    <div class="d-flex flex-col w-fit h-fit bg-warning">
+    <div class="d-flex flex-col w-fit h-fit b2 border-warning p-2">
         <!-- icona+ testo -->
-        <div class="d-flex align-center p-2 gap-1">
+        <div class="d-flex align-center gap-1 mb-1">
             <i class="ti ti-settings text-primary"></i>
-            <p class="bold text-primary shadow-primary">Seleziona Configuratore</p>
+            <p class="bold text-primary shadow-primary nowrap ">Seleziona Configuratore</p>
         </div>
         <!-- tasti -->
-        <div class="btn">
-
+        <div class="btn d-flex align-center gap-1">
+        <i class="ti ti-forms"></i>
+            <p>Form</p>
+        </div>
+        <div class="my-1"></div>
+        <div class="btn d-flex align-center gap-1">
+            <i class="ti ti-user"></i>
+            <p>Login</p>
         </div>
     </div>
-
-    <div>
-
+    <div class="d-flex flex-col w-100 h-100 scroll-y b2 border-info"></div>
+</div>
+    <div class="btn d-flex align-center gap-1 absolute bottom-right btn-primary">
+        <i class="ti ti-code"></i>
+        <p>Mostra Codice</p>
     </div>
-</div>
-
-<div>
-
-</div>
+ <aside id="contenitoreCodice" class="bg-transparent blur-1 rounded w-auto me-3 z-1">
+<i id="copiaCodice" class="ti ti-clipboard"></i>
+     <pre id="output" ></pre>
+ </aside>
 
 </div>
 </body>
